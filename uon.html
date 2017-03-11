@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual hostel</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+  #happyimg{
+    display: none;
+  }
+
+   #nzuriimg{
+    display: none;
+  }
+   #rahaimg{
+    display: none;
+   }
+   #safiimg{
+    display: none;
+   }
+   #nyumbaniimg{
+    display: none;
+   }
+   #pemaimg{
+    display: none;
+  }
+
+   #homeimg{
+    display: none;
+  }
+   #niceimg{
+    display: none;
+   }
+   #exellentimg{
+    display: none;
+   }
+   #happyhostel{
+    display: none;
+    padding-top: 10px;
+    height: 430px
+  }
+   #nzurihostel{
+    display: none;
+    padding-top: 10px;
+    height: 430px;
+  }
+
+   #rahahostel{
+    display: none;
+     padding-top: 10px;
+    height: 430px;
+  }
+
+  #safihostel{
+    display: none;
+     padding-top: 10px;
+    height: 430px;
+  }
+   #nyumbanihostel{
+    display: none;
+     padding-top: 20px;
+    height: 400px;
+  }
+   #pemahostel{
+    display: none;
+     padding-top: 10px;
+    height: 430px;
+  }
+  #homehostel{
+    display: none;
+     padding-top: 10px;
+    height: 430px;
+  }
+   #nicehostel{
+    display: none;
+     padding-top: 10px;
+    height: 430px;
+  }
+   #exellenthostel{
+    display: none;
+     padding-top: 10px;
+    height: 430px;
+  }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50 ;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049 ;
+}
+
+}
+
+div #form{
+    border-radius: 5px;
+    background-color: f2f2f2;
+    padding: 20px;
+}
+
+#form{
+  background: pink;
+}
+</style>
+
+
+
+<!-- script l1 js -->
+<script type="text/javascript">
+  $(document).ready(function(){
+   $("li#l1").click(function(){
+    $("#happyimg").show();
+    $("#happyhostel").show();
+    $("#nzuriimg").hide();
+    $("#nzurihostel").hide();
+    $("#rahaimg").hide();
+    $("#rahahostel").hide();
+    $("#safiimg").hide();
+    $("#safihostel").hide();
+    $("#nyumbaniimg").hide();
+    $("#nyumbanihostel").hide();
+    $("#pemaimg").hide();
+    $("#pemahostel").hide();
+    $("#homeimg").hide();
+    $("#homehostel").hide();
+    $("#niceimg").hide();
+    $("#nicehostel").hide();
+    $("#exellentimg").hide();
+    $("#exellenthostel").hide();
+   });
+
+  });
+// l2 js
+  $(document).ready(function(){
+   $("li#l2").click(function(){
+    $("#happyimg").hide();
+    $("#happyhostel").hide();
+    $("#nzuriimg").show();
+    $("#nzurihostel").show();
+    $("#rahaimg").hide();
+    $("#rahahostel").hide();
+    $("#safiimg").hide();
+    $("#safihostel").hide();
+    $("#nyumbaniimg").hide();
+    $("#nyumbanihostel").hide();
+    $("#pemaimg").hide();
+    $("#pemahostel").hide();
+    $("#homeimg").hide();
+    $("#homehostel").hide();
+    $("#niceimg").hide();
+    $("#nicehostel").hide();
+    $("#exellentimg").hide();
+    $("#exellenthostel").hide();
+   });
+
+  });
+// l3 js
+  $(document).ready(function(){
+   $("li#l3").click(function(){
+    $("#happyimg").hide();
+    $("#happyhostel").hide();
+    $("#nzuriimg").hide();
+    $("#nzurihostel").hide();
+    $("#rahaimg").show();
+    $("#rahahostel").show();
+    $("#safiimg").hide();
+    $("#safihostel").hide();
+    $("#nyumbaniimg").hide();
+    $("#nyumbanihostel").hide();
+    $("#pemaimg").hide();
+    $("#pemahostel").hide();
+    $("#homeimg").hide();
+    $("#homehostel").hide();
+    $("#niceimg").hide();
+    $("#nicehostel").hide();
+    $("#exellentimg").hide();
+    $("#exellenthostel").hide();
+   });
+
+  });
+// l4 js
+  $(document).ready(function(){
+   $("li#l4").click(function(){
+    $("#happyimg").hide();
+    $("#happyhostel").hide();
+    $("#nzuriimg").hide();
+    $("#nzurihostel").hide();
+    $("#rahaimg").hide();
+    $("#rahahostel").hide();
+    $("#safiimg").show();
+    $("#safihostel").show();
+    $("#nyumbaniimg").hide();
+    $("#nyumbanihostel").hide();
+    $("#pemaimg").hide();
+    $("#pemahostel").hide();
+    $("#homeimg").hide();
+    $("#homehostel").hide();
+    $("#niceimg").hide();
+    $("#nicehostel").hide();
+    $("#exellentimg").hide();
+    $("#exellenthostel").hide();
+   });
+
+  });
+// l5 js
+  $(document).ready(function(){
+   $("li#l5").click(function(){
+    $("#happyimg").hide();
+    $("#happyhostel").hide();
+    $("#nzuriimg").hide();
+    $("#nzurihostel").hide();
+    $("#rahaimg").hide();
+    $("#rahahostel").hide();
+    $("#safiimg").hide();
+    $("#safihostel").hide();
+    $("#nyumbaniimg").show();
+    $("#nyumbanihostel").show();
+    $("#pemaimg").hide();
+    $("#pemahostel").hide();
+    $("#homeimg").hide();
+    $("#homehostel").hide();
+    $("#niceimg").hide();
+    $("#nicehostel").hide();
+    $("#exellentimg").hide();
+    $("#exellenthostel").hide();
+   });
+
+  });
+// l6 js
+  $(document).ready(function(){
+   $("li#l6").click(function(){
+    $("#happyimg").hide();
+    $("#happyhostel").hide();
+    $("#nzuriimg").hide();
+    $("#nzurihostel").hide();
+    $("#rahaimg").hide();
+    $("#rahahostel").hide();
+    $("#safiimg").hide();
+    $("#safihostel").hide();
+    $("#nyumbaniimg").hide();
+    $("#nyumbanihostel").hide();
+    $("#pemaimg").show();
+    $("#pemahostel").show();
+    $("#homeimg").hide();
+    $("#homehostel").hide();
+    $("#niceimg").hide();
+    $("#nicehostel").hide();
+    $("#exellentimg").hide();
+    $("#exellenthostel").hide();
+   });
+
+  });
+// l7 js
+  $(document).ready(function(){
+   $("li#l7").click(function(){
+    $("#happyimg").hide();
+    $("#happyhostel").hide();
+    $("#nzuriimg").hide();
+    $("#nzurihostel").hide();
+    $("#rahaimg").hide();
+    $("#rahahostel").hide();
+    $("#safiimg").hide();
+    $("#safihostel").hide();
+    $("#nyumbaniimg").hide();
+    $("#nyumbanihostel").hide();
+    $("#pemaimg").hide();
+    $("#pemahostel").hide();
+    $("#homeimg").show();
+    $("#homehostel").show();
+    $("#niceimg").hide();
+    $("#nicehostel").hide();
+    $("#exellentimg").hide();
+    $("#exellenthostel").hide();
+   });
+
+  });
+// l8 js
+  $(document).ready(function(){
+   $("li#l8").click(function(){
+    $("#happyimg").hide();
+    $("#happyhostel").hide();
+    $("#nzuriimg").hide();
+    $("#nzurihostel").hide();
+    $("#rahaimg").hide();
+    $("#rahahostel").hide();
+    $("#safiimg").hide();
+    $("#safihostel").hide();
+    $("#nyumbaniimg").hide();
+    $("#nyumbanihostel").hide();
+    $("#pemaimg").hide();
+    $("#pemahostel").hide();
+    $("#homeimg").hide();
+    $("#homehostel").hide();
+    $("#niceimg").show();
+    $("#nicehostel").show();
+    $("#exellentimg").hide();
+    $("#exellenthostel").hide();
+   });
+
+  });
+// l9 js
+  $(document).ready(function(){
+   $("li#l9").click(function(){
+    $("#happyimg").hide();
+    $("#happyhostel").hide();
+    $("#nzuriimg").hide();
+    $("#nzurihostel").hide();
+    $("#rahaimg").hide();
+    $("#rahahostel").hide();
+    $("#safiimg").hide();
+    $("#safihostel").hide();
+    $("#nyumbaniimg").hide();
+    $("#nyumbanihostel").hide();
+    $("#pemaimg").hide();
+    $("#pemahostel").hide();
+    $("#homeimg").hide();
+    $("#homehostel").hide();
+    $("#niceimg").hide();
+    $("#nicehostel").hide();
+    $("#exellentimg").show();
+    $("#exellenthostel").show();
+   });
+
+  });
+
+// form js
+// Get the modal
+$(document).ready(function(){
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btns = $(".b");
+
+
+
+// Get the <span> element that closes the modal
+var spans = $(".close");
+
+// When the user clicks the button, open the modal
+// btns.forEach(function (btn) {
+  btns.click(function() {
+      modal.style.display = "block";
+  });
+// });
+
+// When the user clicks on <span> (x), close the modal
+// spans.forEach(function(span) {
+  spans.click(function() {
+      modal.style.display = "none";
+  });
+// });
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+});
+</script>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  <span class="sr-only">Toggle navigation</span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
+      <!-- <a class="navbar-brand" href="#">Brand</a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html"><img id="img-header" src="img/lg2.png" alt="logo"><span class="sr-only">(current)</span></a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Why Us</a></li>
+        <li class="bn"><a href="">Book Now</a></li>
+        <li><a href="faq.html">F.A.Qs</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select Institution <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="uon.html">U.O.N</a></li>
+            <li><a href="jkuat.html">JKUAT</a></li>
+            <li><a href="KU.html">K.U</a></li>
+            <li><a href="KCA.html">K.C.A</a></li>
+            <li><a href="kemu.html">KeMU</a></li>
+            <li><a href="mku.html">M.K.U</a></li>
+            <li><a href="moi.html">MOI</a></li>
+
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Schedule a visit</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">FEEDBACK</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search for a hostel..">
+        </div>
+        <button type="submit" class="btn btn-default">SEARCH!</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><button type="submit" class="btn btn-info">Feedback</button></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign Up <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="#">Register</a></li>
+              <li><a href="#">Sign In</a></li>
+
+
+            <li role="separator" class="divider"></li>
+           <li><a href="mailto:virtualhostels@gmail.com">Email</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+</div>
+</div>  <!--end of first-->
+
+<!-- start of jumbotron
+ -->
+<div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/jkuat1.jpg" alt="sometext" style="width:100%; height:350px">
+              <div class="carousel-caption">
+                <h1>VIRTUAL HOSTELS</h1>
+                <p> </p>
+              </div>
+            </div>
+           <div class="item">
+              <img src="img/uon2.jpg" alt="sometext" style="width:100%; height:350px">
+              <div class="carousel-caption">
+                <h1></h1>
+                <p>Sleep Tight</p>
+              </div>
+            </div>
+            <div class="item">
+              <P><img src="img/uon.jpg" alt="sometext" style="width:50%; height:350px"><img src="img/jkuat.jpg" alt="sometext" style="width:50%; height:350px">
+                <div class="carousel-caption">
+              </P>
+              <h1>!</h1>
+              <p>.</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/uon4.jpg" alt="sometext" style="width:100%; height:350px">
+              <div class="carousel-caption">
+                <h1 style="color:black"></h1>
+                <p style="color:black;">PUTTING A SMILE</p>
+              </div>
+            </div>
+         </div>
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+   </div>
+ </div>
+<div class="thumbnail">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-4">
+<h2><b>UON HOSTELS</b></h2>
+   <h3> <p>Available Hostels.</p></h3>
+     <div class="hostels">
+  <ol id="01">
+   <li id="l1"><a href="#"><b>Happy Lounge Hostel</b></a></li><br>
+    <li id="l2"><a href="#"><b>Nzuri Men Hostel</b> </a></li><br>
+     <li id="l3"><a href="#"><b>Raha Girls</b></a></li><br>
+     <li id="l4"><a href="#"><b>Safi Lounge Hostel</b></a></li><br>
+    <li id="l5"><a href="#"><b>Nyumbani Men Hostel</b> </a></li><br>
+     <li id="l6"><a href="#"><b>Pema Girls</b></a></li><br>
+     <li id="l7"><a href="#"><b>Home Lounge Hostel</b></a></li><br>
+    <li id="l8"><a href="#"><b>Nice Men Hostel</b> </a></li><br>
+     <li id="l9"><a href="#"><b>Exellent Girls</b></a></li><br>
+    </ol>
+  </div>
+  </div>
+  <div class="col-sm-3">
+  <!-- start of marquee -->
+ <br>
+ <div id="happyimg">
+ <marquee scrollamount="5"
+direction="left"
+behavior="scroll">
+<p>
+<img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
+<img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div><br>
+<div id="nzuriimg">
+ <marquee scrollamount="5"
+direction="left"
+behavior="scroll">
+<p>
+<img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
+<img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div><br><br>
+<div id="rahaimg">
+ <marquee scrollamount="5"
+direction="left"
+behavior="scroll">
+<p>
+<img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
+<img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div>
+<div id="safiimg">
+ <marquee scrollamount="5"
+direction="left"
+behavior="scroll">
+<p>
+<img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
+<img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div><br><br><br>
+<div id="nyumbaniimg">
+ <marquee scrollamount="5"
+direction="left"
+behavior="scroll">
+<p>
+<img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
+<img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div>
+<div id="pemaimg">
+ <marquee scrollamount="5"
+direction="left"
+behavior="scroll">
+<p>
+<img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
+<img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div>
+<div id="homeimg">
+ <marquee scrollamount="5"
+direction="left"
+behavior="scroll">
+<p>
+<img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
+<img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div>
+<div id="niceimg">
+ <marquee scrollamount="5"
+direction="left"
+behavior="scroll">
+<p>
+<img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
+<img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div>
+<div id="exellentimg">
+ <marquee scrollamount="5"
+direction="left"
+behavior="scroll">
+<p>
+<img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
+<img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div>
+<!-- end of marquee -->
+     </div>
+     <div class="col-sm-3"></div>
+
+ <!--  start of description -->
+<div id="happyhostel" style="background-color: pink; color: purple">
+<p><h2>Happy Lounge Hostel</h2></p>
+<p> Cost: Ksh. 6,500</p>
+<p> DSTV Available</p>
+<p> Wi-fi Available</p>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View More</button>
+  <div id="demo" class="collapse">
+The hostel is ideal for students studying in the CBD. It is located in Nairobi, along university way. It has the following features;
+- 4 sharing 6500.
+- 2 sharing 11000.
+- Single room 12000.
+Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
+
+</div>
+<!-- book now -->
+<!-- <span> <a href="#"><button type="button" name="button">BOOK NOW</button></a></span> -->
+<span><a href="#myModal"><button  type="button" class="b">BOOK NOW</button></a></span>
+</div>
+<br>
+<!-- Nzuri hostel -->
+<div id="nzurihostel" style="background-color: lightblue; color: purple">
+<p><h2>Nzuri Lounge Hostel</h2></p>
+<p> Cost: Ksh. 9,500</p>
+<p> DSTV Available</p>
+<p> Hot Shower Available</p>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">View More</button>
+  <div id="demo1" class="collapse">
+The hostel is ideal for students studying in the CBD or its (CBD) environs. Located in Nairobi West, on the crossroad of Muthaiti Avenue with Gandhi Road. It has the following features;
+- 4 sharing 9500.
+- 2 sharing 11000.
+- Single room 12000.
+Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast and dinner offered.
+</div>
+<!-- book now -->
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span>
+</div>
+<br><br>
+<!-- Raha Hostel -->
+<div id="rahahostel" style="background-color: purple; color: gold">
+<p><h2>Raha Lounge Hostel</h2></p>
+<p> Cost: Ksh. 4,500</p>
+<p> Good Meals</p>
+<p> Hot Shower Available</p>
+<!-- view more -->
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">View More</button>
+  <div id="demo2" class="collapse">
+The hostel is ideal for students studying in the CBD or in Strathmore, Daystar and Riara University. Located in Nairobi West, on the crossroad of Muthaiti Avenue with Gandhi Road. It has the following features;
+- 4 sharing 4500.
+- 2 sharing 6000.
+- Single room 8000.
+Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
+price:Ksh 3750
+</div>
+<!-- book now -->
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span>
+
+</div>
+<!-- safi hostel -->
+<div id="safihostel" style="background-color: purple; color: blue">
+<p><h2>Safi Lounge Hostel</h2></p>
+<p> Cost: Ksh. 6,500</p>
+<p> DSTV Available</p>
+<p> Wi-fi Available</p>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">View More</button>
+  <div id="demo3" class="collapse">
+The hostel is ideal for students studying in the CBD or in Strathmore, Daystar and Riara University. Located in Nairobi West, on the crossroad of Muthaiti Avenue with Gandhi Road. It has the following features;
+- 4 sharing 9500.
+- 2 sharing 11000.
+- Single room 12000.
+Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
+price:Ksh 3750
+</div>
+<!-- book now -->
+<span> <a href="#"><button type="button" class="b" name="button">BOOK NOW</button></a></span>
+
+</div>
+<br><br><br>
+<!-- Nyumbani hostel -->
+<div id="nyumbanihostel" style="background-color: gold; color: blue">
+<p><h2>Nyumbani Lounge Hostel</h2></p>
+<p> Cost: Ksh. 9,500</p>
+<p> DSTV Available</p>
+<p> Hot Shower Available</p>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">View More</button>
+  <div id="demo4" class="collapse">
+The hostel is ideal for students studying in the CBD or in Strathmore, Daystar and Riara University. Located in Nairobi West, on the crossroad of Muthaiti Avenue with Gandhi Road. It has the following features;
+- 4 sharing 9500.
+- 2 sharing 11000.
+- Single room 12000.
+Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
+price:Ksh 3750
+</div>
+<!-- book now -->
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span></div>
+<br><br>
+<!-- pema Hostel -->
+<div id="pemahostel">
+<p><h2>Pema Lounge Hostel</h2></p>
+<p> Cost: Ksh. 4,500</p>
+<p> Good Meals</p>
+<p> Hot Shower Available</p>
+<!-- view more -->
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5">View More</button>
+  <div id="demo5" class="collapse">
+The hostel is ideal for students studying in the CBD or in Strathmore, Daystar and Riara University. Located in Nairobi West, on the crossroad of Muthaiti Avenue with Gandhi Road. It has the following features;
+- 4 sharing 4500.
+- 2 sharing 6000.
+- Single room 8000.
+Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
+price:Ksh 3750
+</div>
+<!-- book now -->
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span></div>
+<!-- home hostel -->
+<div id="homehostel">
+<p><h2>Home Lounge Hostel</h2></p>
+<p> Cost: Ksh. 6,500</p>
+<p> DSTV Available</p>
+<p> Wi-fi Available</p>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo6">View More</button>
+  <div id="demo6" class="collapse">
+The hostel is ideal for students studying in the CBD or in Strathmore, Daystar and Riara University. Located in Nairobi West, on the crossroad of Muthaiti Avenue with Gandhi Road. It has the following features;
+- 4 sharing 9500.
+- 2 sharing 11000.
+- Single room 12000.
+Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
+price:Ksh 3750
+</div>
+<!-- book now -->
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span>
+
+</div>
+<br><br><br>
+<!-- Nice hostel -->
+<div id="nicehostel">
+<p><h2>Nice Lounge Hostel</h2></p>
+<p> Cost: Ksh. 9,500</p>
+<p> DSTV Available</p>
+<p> Hot Shower Available</p>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo7">View More</button>
+  <div id="demo7" class="collapse">
+The hostel is ideal for students studying in the CBD or in Strathmore, Daystar and Riara University. Located in Nairobi West, on the crossroad of Muthaiti Avenue with Gandhi Road. It has the following features;
+- 4 sharing 9500.
+- 2 sharing 11000.
+- Single room 12000.
+Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
+price:Ksh 3750
+</div>
+<!-- book now -->
+<span> <a href="#"><button class="b" type="button" name="button">BOOK NOW</button></a></span>
+</div>
+<br><br>
+<!-- Exellent Hostel -->
+<div id="exellenthostel">
+<p><h2>Exellent Lounge Hostel</h2></p>
+<p> Cost: Ksh. 4,500</p>
+<p> Good Meals</p>
+<p> Hot Shower Available</p>
+<!-- view more -->
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo8">View More</button>
+  <div id="demo8" class="collapse">
+The hostel is ideal for students studying in the CBD or in Strathmore, Daystar and Riara University. Located in Nairobi West, on the crossroad of Muthaiti Avenue with Gandhi Road. It has the following features;
+- 4 sharing 4500.
+- 2 sharing 6000.
+- Single room 8000.
+Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
+price:Ksh 3750
+</div>
+<!-- book now -->
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span>
+</div>
+
+<!-- end of description -->
+
+<!-- form html -->
+
+</div>
+</div>
+</div>
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+    <div id="form">
+  <form action="/action_page.php">
+    <label for="fname">Your Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+   <label for="country">Gender</label>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+     <input type="radio" name="gender" value="female"> Female<br>
+
+
+   <label for="country">Institution</label>
+    <select id="country" name="country">
+      <option value="australia">UON</option>
+      <option value="canada">KCA</option>
+      <option value="usa">KU</option>
+      <option value="usa">JKUAT</option>
+    </select>
+
+   <label for="lname">ID No</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your ID No">
+
+   <label for="lname">Tell No</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Tell No">
+
+   <input type="submit" value="Submit">
+  </form>
+</div>
+  </div>
+
+</div>
+</body>
+</html>
