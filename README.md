@@ -7,7 +7,7 @@ Looking for a hostel? Here we are to serve you! No more endless journeys’ look
 
 # Team Contributers
 -Ephantus Kinuthia  [Lead Developer]
--Paul Nderitu-      [Front End Developer]
+-Paul Nderitu-      [Front End Developer & Research Engineer]
 -Wambui Rahab-      [Front End Developer]
 -Kelvin Munene-     [Research Engineer]
 
@@ -15,7 +15,7 @@ Looking for a hostel? Here we are to serve you! No more endless journeys’ look
 
 ### Tech used
 
-Virtual Hostel uses a number of open source projects to work properluses a number of open source projects to work properly:
+Virtual Hostel uses a number of open source projects to work properly:
 
 * HTML
 * CSS
@@ -28,15 +28,12 @@ Virtual Hostel uses a number of open source projects to work properluses a numbe
 
 ### How to run the Project
 
-Go to github.
-Git clone the project.
-Run it.
+You cannot run this project.
 
 
 License
-----
-
-MIT
+This project is released under the [MIT License](./LICENSE.md)
+NB: Do not copy!!
 
 
 **Free Software**
